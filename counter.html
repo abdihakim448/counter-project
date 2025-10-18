@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="counter.css">
+</head>
+<body>
+    <div class="counter">
+        <h1>js counter</h1>
+        <p id="demo"> 0</p>
+        <div id="buttons">
+            
+            <button id="btnIncrease">increase</button>
+            <button id="btnDecrease">decrease</button>
+            <button id="btnReset">reset</button>
+        </div>
+    </div>
+    <script>
+        let count = 0;
+        
+        
+         const button = document.getElementById("buttons");
+         
+          const btnIncrease = document.getElementById("btnIncrease");
+            const btnDecrease = document.getElementById("btnDecrease");
+            const btnReset = document.getElementById("btnReset");
+            
+            
+         
+        btnIncrease.addEventListener("click", () =>{
+            const demo = document.getElementById("demo").textContent;
+        
+            document.getElementById("demo").textContent = count++;
+            
+
+    
+               
+         } ) 
+          btnDecrease.addEventListener("click", () =>{
+            
+            const demo = document.getElementById("demo").textContent;
+            
+            document.getElementById("demo").textContent = count--;
+            
+
+    
+               
+         } ) 
+          btnReset.addEventListener("click", () =>{
+            const demo = document.getElementById("demo").textContent;
+        
+            document.getElementById("demo").textContent = count = 0;
+            
+
+    
+               
+         } ) 
+
+            
+        // })
+    </script>
+</body>
+
+</html>
